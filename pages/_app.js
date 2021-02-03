@@ -1,6 +1,6 @@
 import App from 'next/app'
 
-import { setup } from 'twind'
+import { setup } from 'twind/shim'
 import twindConfig from '../twind.config'
 /* import '../css/index.css' */
 

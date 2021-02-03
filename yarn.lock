@@ -2491,6 +2491,13 @@ node-html-parser@1.4.9:
   dependencies:
     he "1.2.0"
 
+node-html-parser@^2.0.2:
+  version "2.1.0"
+  resolved "https://registry.npmjs.org/node-html-parser/-/node-html-parser-2.1.0.tgz#36345804d743a5a1f672d4821a53f6b0e60629a9"
+  integrity sha512-kbCNfqjrwHAbG+mevL8aqjwVtF0Qv66XurWHoGLOc5G9rPR1L3k602jfeczAUUBldLNnCrdsDmO5G5nqAoMW+g==
+  dependencies:
+    he "1.2.0"
+
 node-libs-browser@^2.2.1:
   version "2.2.1"
   resolved "https://registry.npmjs.org/node-libs-browser/-/node-libs-browser-2.2.1.tgz#b64f513d18338625f90346d27b0d235e631f6425"
@@ -3550,6 +3557,11 @@ style-loader@1.2.1:
     loader-utils "^2.0.0"
     schema-utils "^2.6.6"
 
+style-vendorizer@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.npmjs.org/style-vendorizer/-/style-vendorizer-2.0.0.tgz#0c46cec94069f1c768d31c3d307ed045646f503c"
+  integrity sha512-CeqwnrtXd/DKIadVNdJDtHnpCmsc28rWVWLmgpF2HdzTiWFVCE1F1OzWWwskOEtWpOpgm6NrjccfkNGo8qW4MA==
+
 styled-jsx@3.3.2:
   version "3.3.2"
   resolved "https://registry.npmjs.org/styled-jsx/-/styled-jsx-3.3.2.tgz#2474601a26670a6049fb4d3f94bd91695b3ce018"
@@ -3669,11 +3681,6 @@ timers-browserify@^2.0.4:
   dependencies:
     setimmediate "^1.0.4"
 
-tiny-css-prefixer@^1.1.4:
-  version "1.1.4"
-  resolved "https://registry.npmjs.org/tiny-css-prefixer/-/tiny-css-prefixer-1.1.4.tgz#b96a0aa6b312227d996e9c303645e3ae2f194086"
-  integrity sha512-QLnDGLUmMkNlSuWogBaSu92uQnvWhcQwUc+MG8L4YgBkjSmBkAz29pTq+8Rh3YWR1TwPrjuZDKWzO7v4PXkipQ==
-
 to-arraybuffer@^1.0.0:
   version "1.0.1"
   resolved "https://registry.npmjs.org/to-arraybuffer/-/to-arraybuffer-1.0.1.tgz#7d229b1fcc637e466ca081180836a7aabff83f43"
@@ -3755,13 +3762,14 @@ tunnel-agent@^0.6.0:
   dependencies:
     safe-buffer "^5.0.1"
 
-twind@^0.9.1:
-  version "0.9.1"
-  resolved "https://registry.npmjs.org/twind/-/twind-0.9.1.tgz#37521cc5a120805e69e36c21ccc789951750d482"
-  integrity sha512-7yZ5ZdwvmaHWUnJX61WagHeVTE36wbzHFdlJ3yh0HJXoL0sKKJY2Nu1OX5Gwtxo+l3o4HzzxjqO30HaoIHXI0Q==
+twind@^0.14.1:
+  version "0.14.6"
+  resolved "https://registry.npmjs.org/twind/-/twind-0.14.6.tgz#052a4ac0400c98894ed1d649f160ff3b944e18e2"
+  integrity sha512-NiwCyAP+qmqp+WVq2PwzW0YJN53Gq3iJsNqdFCj6jCw5yWEhdg15Llyanv7WTQ2CeS+xcmpPdcD13mxk8qEWRw==
   dependencies:
     csstype "^3.0.5"
-    tiny-css-prefixer "^1.1.4"
+    node-html-parser "^2.0.2"
+    style-vendorizer "^2.0.0"
 
 type-fest@^0.7.1:
   version "0.7.1"
