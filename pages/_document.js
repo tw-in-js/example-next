@@ -1,7 +1,6 @@
 import Document from 'next/document'
 import * as React from 'react'
-import { setup } from 'twind'
-import { shim, asyncVirtualSheet, getStyleTagProperties } from 'twind/server'
+import { setup, shim, asyncVirtualSheet, getStyleTagProperties } from 'twind/server'
 import twindConfig from '../twind.config'
 
 const sheet = asyncVirtualSheet()
@@ -10,11 +9,11 @@ setup({ ...twindConfig, sheet })
 
 export default class MyDocument extends Document {
   static getInitialProps(ctx) {
-    sheet.reset()
-
     const originalRenderPage = ctx.renderPage
 
     ctx.renderPage = async (options) => {
+      sheet.reset()
+
       let { html, head } = await originalRenderPage(options)
 
       html = shim(html)

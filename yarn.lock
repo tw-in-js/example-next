@@ -1291,7 +1291,7 @@ domutils@2.4.2:
     domelementtype "^2.0.1"
     domhandler "^3.3.0"
 
-domutils@^2.4.2:
+domutils@^2.4.2, domutils@^2.4.4:
   version "2.4.4"
   resolved "https://registry.npmjs.org/domutils/-/domutils-2.4.4.tgz#282739c4b150d022d34699797369aad8d19bbbd3"
   integrity sha512-jBC0vOsECI4OMdD0GC9mGn7NXPLb+Qt6KW1YDQzeQYRUFKmNG8lh7mO5HiELfr+lLQE7loDVI4QcAxV80HS+RA==
@@ -1786,6 +1786,16 @@ htmlparser2@5.0.1:
     domelementtype "^2.0.1"
     domhandler "^3.3.0"
     domutils "^2.4.2"
+    entities "^2.0.0"
+
+htmlparser2@^6.0.0:
+  version "6.0.0"
+  resolved "https://registry.npmjs.org/htmlparser2/-/htmlparser2-6.0.0.tgz#c2da005030390908ca4c91e5629e418e0665ac01"
+  integrity sha512-numTQtDZMoh78zJpaNdJ9MXb2cv5G3jwUoe3dMQODubZvLoGvTE/Ofp6sHvH8OGKcN/8A47pGLi/k58xHP/Tfw==
+  dependencies:
+    domelementtype "^2.0.1"
+    domhandler "^4.0.0"
+    domutils "^2.4.4"
     entities "^2.0.0"
 
 http-errors@1.7.3:
@@ -2488,13 +2498,6 @@ node-html-parser@1.4.9:
   version "1.4.9"
   resolved "https://registry.npmjs.org/node-html-parser/-/node-html-parser-1.4.9.tgz#3c8f6cac46479fae5800725edb532e9ae8fd816c"
   integrity sha512-UVcirFD1Bn0O+TSmloHeHqZZCxHjvtIeGdVdGMhyZ8/PWlEiZaZ5iJzR189yKZr8p0FXN58BUeC7RHRkf/KYGw==
-  dependencies:
-    he "1.2.0"
-
-node-html-parser@^2.0.2:
-  version "2.1.0"
-  resolved "https://registry.npmjs.org/node-html-parser/-/node-html-parser-2.1.0.tgz#36345804d743a5a1f672d4821a53f6b0e60629a9"
-  integrity sha512-kbCNfqjrwHAbG+mevL8aqjwVtF0Qv66XurWHoGLOc5G9rPR1L3k602jfeczAUUBldLNnCrdsDmO5G5nqAoMW+g==
   dependencies:
     he "1.2.0"
 
@@ -3762,13 +3765,13 @@ tunnel-agent@^0.6.0:
   dependencies:
     safe-buffer "^5.0.1"
 
-twind@^0.14.1:
-  version "0.14.6"
-  resolved "https://registry.npmjs.org/twind/-/twind-0.14.6.tgz#052a4ac0400c98894ed1d649f160ff3b944e18e2"
-  integrity sha512-NiwCyAP+qmqp+WVq2PwzW0YJN53Gq3iJsNqdFCj6jCw5yWEhdg15Llyanv7WTQ2CeS+xcmpPdcD13mxk8qEWRw==
+twind@^0.15.9:
+  version "0.15.9"
+  resolved "https://registry.npmjs.org/twind/-/twind-0.15.9.tgz#53e8f89e55dbf29ba4b7ef6e4af431a20b92b070"
+  integrity sha512-4tEjt0gC/eC0CMroHsXgsr04qX5Au6huJrbTkp3XFgoUYZzVbnfdr9PH+WzXpX0uG7MYAktd1+yr8JhBZQOHYA==
   dependencies:
     csstype "^3.0.5"
-    node-html-parser "^2.0.2"
+    htmlparser2 "^6.0.0"
     style-vendorizer "^2.0.0"
 
 type-fest@^0.7.1:
