@@ -6,9 +6,10 @@
     "start": "next start"
   },
   "dependencies": {
+    "@twind/next": "^1.0.2",
     "next": "^10.0.4",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "twind": "^0.9.1"
+    "twind": "^0.16.0"
   }
 }
